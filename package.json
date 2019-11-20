@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DrHopping/DrHopping.github.io/issues"
   },
-  "homepage": "https://github.com/DrHopping/DrHopping.github.io#readme"
+  "homepage": "https://github.com/DrHopping/DrHopping.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
