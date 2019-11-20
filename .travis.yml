@@ -3,7 +3,7 @@ node_js:
  - 12.12.0
 before_install:
   - npm i -g firebase-tools
-  - npm intall -g eslint
+  - npm install -g eslint
 script:
   - npm run lint
 after_success:
