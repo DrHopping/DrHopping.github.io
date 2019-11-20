@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Scripts.js"></script>
+    <title>Function and event processing</title>
+</head>
+<body>
+    <p>Calculating area of triangle</p>
+    <form name="triangle">
+        Coordinates of point A: <input type="text" size="7" name="PointA_x">
+                                <input type="text" size="7" name="PointA_y"><br>
+        Coordinates of point B: <input type="text" size="7" name="PointB_x">
+                                <input type="text" size="7" name="PointB_y"><br>
+        Coordinates of point C: <input type="text" size="7" name="PointC_x">
+                                <input type="text" size="7" name="PointC_y"><br>
+        Area of triangle:       <input type="text" size="7" name="Area" onfocus="area(triangle)"><br>
+    </form>
+    <hr>
+    <p>Distance from point to origin</p>
+    <form name="point">
+        Coordinates of point:   <input type="text" size="7" name="Point_x">
+                                <input type="text" size="7" name="Point_y"><br>
+        Distance from (0,0):    <input type="text" size="7" name="Distance" value="0" onselect="distance(point)">   
+    </form>
+    <hr>
+    <p>Swaping two values</p>
+    <form name="swaping">
+        Coordinates of point A: <input type="text" size="7" name="Var1" onblur="swap(swaping)"><br>
+        Coordinates of point B: <input type="text" size="7" name="Var2" onblur="swap(swaping)">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE> Оперуємо об’єктами - властивості текстового поля</TITLE>
+    <script language="JavaScript">
+        function propobj(obj) {
+            var result = ""
+            for (var i in obj) {
+                result += obj.data.value + "." + i + " = " + (obj.data)[i] + "\r\n"
+            }
+            result += "\n\r"
+            form1.data.value = result
+        }
+    </script>
+</HEAD>
+
+<BODY bgcolor=F8F8FF>
+    <H4>Властивості об’єкта – текстового поля</H4>
+    <FORM name="form1">
+        <input type="button" value="Виконати" onClick="propobj (form1)">
+        <hr>
+        <textarea name="data" cols=80 rows=20 id=1>Текст</textarea>
+        <hr>
+        <input type="reset" value="Скасувати">
+    </FORM>
+</BODY>
+
+</HTML>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body onload="animateImage()">
+    <img src="images/frame_0_delay-0.04s.png" id="gifImage"><br>
+    <br><br><br>
+    <hr>
+
+    <p><u>Enter array: </u></p>
+    <form name="form1">
+    <input type="text" size=15 name="t1"><br>
+        <u>Number of positive numbers:</u><br><input type="text" size=7 name="t2"><br><br>
+    <input type="button" value="Calculate" onclick="positiv(form1)">
+    <input type="reset" value="Reset">
+    </form>
+    
+    <p><u>Enter array:</u></p>
+    <form name="form2">
+    <input type="text" size=15 name="p1"><br>
+    <u>Largest element</u>:<br><input type="text" size=7 name="p2"><br><br>
+    <input type="button" value="Find" onclick="elemmax(form2)">
+    <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

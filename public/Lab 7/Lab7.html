@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">
+            <table border="" id="table1">
+                <tr>
+                    <th height="100" width="100" class="cell" id="c1"></th>
+                    <th height="100" width="100" class="cell" id="c2"></th>
+                    <th height="100" width="100" class="cell" id="c3"></th>
+                </tr>
+
+                <tr>
+                    <th height="100" width="100" class="cell" id="c4"></th>
+                    <th height="100" width="100" class="cell" id="c5"></th>
+                    <th height="100" width="100" class="cell" id="c6"></th>
+                </tr>
+                <tr>
+                    <th height="100" width="100" class="cell" id="c7"></th>
+                    <th height="100" width="100" class="cell" id="c8"></th>
+                    <th height="100" width="100" class="cell" id="c9"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="selector">
+            <div class="selector-background">
+                <div class="title">
+                    <p class="headingB">Background</p>
+                </div>
+                <div class="selector-background-types">
+                    <div class="type-color">
+                        <input type="radio" name="typeB" id="colorB" onclick="bSelectColor(colorB,colorsB.value)"> Color
+                        <br>
+                        <select id="colorsB" class="colorBSelector" onchange="bSelectColor(colorB,colorsB.value)">
+                            <option value="">None</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="type-image">
+                        <input type="radio" name="typeB" id="imageB" onclick="bSelectImage(imageB,imageBselect.value)">
+                        Image
+                        <select id="imageBselect" class="imageCSelector"
+                            onchange="bSelectImage(imageB,imageBselect.value)">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="selector-cells">
+                <div class="title">
+                    <p class="headingC">Cell</p>
+                    <select id="cellNumber" class="cellSelector">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="selector-cell-types">
+                    <div class="type-color">
+                        <input type="radio" name="typeC" id="colorC"
+                            onclick="cSelectColor(colorC,colorsC.value,cellNumber.value)"> Color <br>
+                        <select id="colorsC" class="colorCSelector"
+                            onchange="cSelectColor(colorC,colorsC.value,cellNumber.value)">
+                            <option value="">None</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="type-image">
+                        <input type="radio" name="typeC" id="imageC"> Image
+                        <select id="imagesC" class="imageCSelector"
+                            onchange="cSelectImage(imageC,imagesC.value,cellNumber.value)">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="products">
+        <form name="form21">
+            <table border=1 align="center" bgcolor=azure>
+                <tr>
+                    <th width="200"><b>Products list: </b></th>
+                    <th><b>Cart: </b></th>
+                </tr>
+                <tr>
+                    <td align=top>
+                        <select name="data" size=9 onChange="usd(form21,form21.data.value)" style="width: 100%">
+                            <option value=0>Rice</option>
+                            <option value=1>Milk</option>
+                            <option value=2>Bananas</option>
+                            <option value=3>Cookies</option>
+                            <option value=4>Bread</option>
+                            <option value=5>Mandarins</option>
+                            <option value=6>Cheese</option>
+                            <option value=7>Mushrooms</option>
+                            <option value=8>Flour</option>
+                            <option value=9>Coffee</option>
+                        </select>
+                        <input type="text" align="center" name="res" size=10>
+                    </td>
+                    <td>
+                        <textarea name="restext" cols=50 rows=12></textarea>
+                    </td>
+                </tr>
+            </table>
+            <center>
+                <input type="reset" value="Reset" onClick="sum=0; s=''">
+                <input type="button" value="Sum = " onClick="form21.resgr.value=sum+'$'">
+                <input type="text" name="resgr" size=10>
+            </center>
+        </form>
+
+    </div>
+</body>
+
+</html>

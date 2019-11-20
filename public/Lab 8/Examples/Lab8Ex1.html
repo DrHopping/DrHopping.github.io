@@ -1,0 +1,32 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>НСД двох чисел</TITLE>
+    <script language="JavaScript">
+        function nod(obj) {
+            var n = obj.num1.value
+            var m = obj.num2.value
+            var p = n % m
+            while (p != 0) {
+                n = m
+                m = p
+                p = n % m
+            }
+            obj.res.value = m
+        }
+    </script>
+</HEAD>
+
+<BODY>
+    НСД двох заданих чисел
+    <FORM name="form1">
+        Введіть число 1 <input type="text" name="num1" size="8"><br>
+        Введіть число 2 <input type="text" name="num2" size="8"><br>
+        НСД <input type="text" name="res" size="8"><br>
+        <input type="button" value="Обчислити" onClick="nod(form1)">
+        <input type="reset" value="Скасувати">
+    </FORM>
+</BODY>
+
+</HTML>

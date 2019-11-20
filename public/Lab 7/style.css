@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+}
+.headingB{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.headingC{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.cellSelector{
+    margin-left: 10px;
+}
+.selector{
+    display: flex;
+}
+.table{
+    margin-right: 100px;
+}
+.title{
+    max-height: 20px;
+    min-width: 100px;
+    display: flex;
+    border-bottom: solid black;
+    border-width: 1px 3px;
+
+}
+.selector-background{
+    border: solid black;
+    border-width: 0 1px;
+}
+.selector-cells{
+    border-right: solid black;
+    border-width: 0 1px;
+}
+.type-color{
+    display: flex;
+}
+.type-image{
+    display: flex;
+}

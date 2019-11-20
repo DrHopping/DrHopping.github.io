@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
+    <title>Cyclic calculations</title>
+</head>
+
+<body>
+    <p><b>Enter a natural number</b></p>
+    <form name="form5">
+        <u>Number: </u><input type="text" size=5 name="t1"><br>
+        <u>Rotated: </u><input type="text" size=5 name="t2"><br><br>
+        <input type="button" value="Rotate" onclick="rotate(form5)">
+        <input type="reset" value="Reset">
+    </form>
+    
+    <p><b>Lucky tickets</b></p>
+    <form name="form6">
+        <u>Number of lucky bus tickets</u> = <input type="text" size=7 name="p"><br><br>
+        <input type="button" value="Calculate" onclick="ticket(form6)">
+        <input type="reset" value="Reset">
+    </form>
+
+    <p><b>Enter number</b></p>
+    <form name="form7">
+        <u>Number:</u><input type="text" size=7 name="variable"><br>
+        <u>Divisors:</u> <input type="text" size=10 name="z"><br><br>
+        <input type="button" value="Calculate" onclick="div(form7)">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
