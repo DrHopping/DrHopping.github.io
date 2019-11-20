@@ -21,18 +21,18 @@ function signs (form) {
 	var str = form.dt.value
 	var start = 1901; var birthyear = parseInt(str[0] + str[1] + str[2] + str[3]); var date = parseInt(str[8] + str[9]); var month = parseInt(str[5] + str[6])
 	var zodiac
-	if (month == 1 && date >= 20 || month == 2 && date <= 18) { zodiac = 'Aquarius' }
-	if (month == 2 && date >= 19 || month == 3 && date <= 20) { zodiac = 'Pisces' }
-	if (month == 3 && date >= 21 || month == 4 && date <= 19) { zodiac = 'Aries' }
-	if (month == 4 && date >= 20 || month == 5 && date <= 20) { zodiac = 'Taurus' }
-	if (month == 5 && date >= 21 || month == 6 && date <= 21) { zodiac = 'Gemini' }
-	if (month == 6 && date >= 22 || month == 7 && date <= 22) { zodiac = 'Cancer' }
-	if (month == 7 && date >= 23 || month == 8 && date <= 22) { zodiac = 'Leo' }
-	if (month == 8 && date >= 23 || month == 9 && date <= 22) { zodiac = 'Virgo' }
-	if (month == 9 && date >= 23 || month == 10 && date <= 22) { zodiac = 'Libra' }
-	if (month == 10 && date >= 23 || month == 11 && date <= 21) { zodiac = 'Scorpio' }
-	if (month == 11 && date >= 22 || month == 12 && date <= 21) { zodiac = 'Sagittarius' }
-	if (month == 12 && date >= 22 || month == 1 && date <= 19) { zodiac = 'Capricorn' }
+	if ((month == 1 && date >= 20) || (month == 2 && date <= 18)) { zodiac = 'Aquarius' }
+	if ((month == 2 && date >= 19) || (month == 3 && date <= 20)) { zodiac = 'Pisces' }
+	if ((month == 3 && date >= 21) || (month == 4 && date <= 19)) { zodiac = 'Aries' }
+	if ((month == 4 && date >= 20) || (month == 5 && date <= 20)) { zodiac = 'Taurus' }
+	if ((month == 5 && date >= 21) || (month == 6 && date <= 21)) { zodiac = 'Gemini' }
+	if ((month == 6 && date >= 22) || (month == 7 && date <= 22)) { zodiac = 'Cancer' }
+	if ((month == 7 && date >= 23) || (month == 8 && date <= 22)) { zodiac = 'Leo' }
+	if ((month == 8 && date >= 23) || (month == 9 && date <= 22)) { zodiac = 'Virgo' }
+	if ((month == 9 && date >= 23) || (month == 10 && date <= 22)) { zodiac = 'Libra' }
+	if ((month == 10 && date >= 23) || (month == 11 && date <= 21)) { zodiac = 'Scorpio' }
+	if ((month == 11 && date >= 22) || (month == 12 && date <= 21)) { zodiac = 'Sagittarius' }
+	if ((month == 12 && date >= 22) || (month == 1 && date <= 19)) { zodiac = 'Capricorn' }
 	alert(zodiac)
 }
 

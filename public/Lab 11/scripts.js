@@ -44,7 +44,7 @@ function animateImage () {
 	document.images[0].src = imagesArray[i].src
 	i++
 	if (i > 18) { i = 0 }
-	setTimeout('animateImage()', 100)
+	setTimeout(animateImage, 100)
 }
 
 function positiv (obj) {

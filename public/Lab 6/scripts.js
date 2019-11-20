@@ -1,6 +1,5 @@
 function price (argument) {
 	var sum = 0
-
 	if (document.form1.elements[3].checked) {
 		sum += Number(document.form1.elements[3].value)
 	} else if (document.form1.elements[4].checked) {
@@ -31,10 +30,6 @@ function price (argument) {
 		alert('Select the reporting form')
 		return
 	}
-
-	j = ''
-	p = ''
-	g = ''
 
 	if (document.form1.elements[0].checked) {
 		var j = sum
