@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "deploy": "npx firebase deploy --token 1//0c5XD6fx_-263CgYIARAAGAwSNwF-L9IrsNpOatjy9fthj5COVqlkHsf82YvypGWabewPkg68JmzvjOGwa4672D9bqs2q_pxZ2cA"
+    "deploy": "npx firebase deploy $FIREBASE_TOKEN"
   },
   "repository": {
     "type": "git",

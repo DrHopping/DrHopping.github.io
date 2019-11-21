@@ -12,7 +12,7 @@ notifications:
   email: false
 deploy:
   provider: firebase
-  token: 1//0c5XD6fx_-263CgYIARAAGAwSNwF-L9IrsNpOatjy9fthj5COVqlkHsf82YvypGWabewPkg68JmzvjOGwa4672D9bqs2q_pxZ2cA
+  token: $FIREBASE_TOKEN
 branches:
   only:
     - master
